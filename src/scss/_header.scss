@@ -1,0 +1,70 @@
+header{
+  height: 75px;
+  padding: 25px 0;
+  position: fixed;
+  z-index: 1;
+  background-color: white;
+  width: 100%;
+  &.border{
+    border-bottom: 1px solid $general_color;
+  }
+  & > .header-content{
+    height: 50px;
+    &.border{
+      border-bottom: 1px solid $general_color;
+    }
+  }
+}
+
+
+.menu{
+  position: relative;
+  line-height: 29.5px;
+  font-size: 15px;
+  & > .menu-items > a{
+    margin: $header_a_margin;
+    &:last-child{
+      color: $blue;
+      margin-right: 0;
+      border: 1px solid $blue;
+      border-radius: 5px;
+      padding: 5px 15px;
+      transition: .5s;
+      &.onhover{
+        transition: .5s;
+        background-color: $blue;
+        color: white;
+      }
+    }
+  }
+}
+
+.menu-item-with-dropdown{
+  height: 155px;
+  margin: $header_a_margin;
+  & > a{
+    margin: $header_a_margin;
+    & > i{
+      margin-left: 5px;
+    }
+  }
+}
+
+.dropdown-menu{
+  background-color: white;
+  position: absolute;
+  margin-left: 10px;
+  padding: 5px 20px;
+  border: 1px solid $general_color;
+  display: none;
+  border-radius: 5px;
+  &.active{
+    display: block;
+  }
+}
+
+
+.fa-sort-down{
+  position: absolute;
+  top: 5px;
+}

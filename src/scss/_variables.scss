@@ -1,0 +1,20 @@
+$width_70: 70%;
+$left: left;
+$right: right;
+$general_color: #58402c;
+$blue: #30488f;
+$header_a_margin: 0 15px;
+$yellow_section: #ffe7d2;
+
+@mixin general_position{
+  width: $width_70;
+  margin: 0 auto;
+}
+
+@mixin section_button{
+  font-size: 18px;
+  padding: 8px 15px;
+  background-color: $blue;
+  border-radius: 5px;
+  color: white;
+}

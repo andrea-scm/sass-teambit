@@ -1,0 +1,38 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  font-family: 'Lato', sans-serif;
+  color: $general_color;
+}
+
+a{
+  text-decoration: none;
+}
+
+a:hover{
+  color: $blue
+}
+
+section{
+  height: 100vh;
+}
+
+.container{
+  @include general_position;
+}
+
+.header-content{
+  @include general_position;
+}
+
+.left{
+  float: $left;
+}
+
+.right{
+  float: $right;
+}
